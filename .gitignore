@@ -1,3 +1,2 @@
-out/
-*.db
-.idea/
+db.properties
+*.class
