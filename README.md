@@ -99,19 +99,34 @@ This file contains the local database connection details and should not be uploa
 
 ## How to Run
 
-Compile the project using:
+### 1. Requirements
 
-```text
-javac -cp ".;libb\mysql-connector-j-26.7.0.jar" *.java
+* Java JDK
+* MySQL Server
+* MySQL Connector/J
+* VS Code or another Java IDE
+
+### 2. Configure the Database
+
+Create a local `db.properties` file in the project root with your MySQL connection details. Do not upload this file to GitHub.
+
+### 3. Compile the Project
+
+Open the terminal in the project root and run:
+
+```powershell
+javac -cp ".;lib\mysql-connector-j-26.7.0.jar" src\*.java
 ```
 
-Run the application using:
+### 4. Run the Application
 
-```text
-java -cp ".;libb\mysql-connector-j-26.7.0.jar" Main
+```powershell
+java -cp "src;lib\mysql-connector-j-26.7.0.jar" Main
 ```
 
 The application starts with the Login screen.
+
+**Note:** These commands are for Windows PowerShell. Make sure the MySQL server is running and the database has been created before launching the application.
 
 ## Application Workflow
 
